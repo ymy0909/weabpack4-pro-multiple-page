@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--	<meta http-equiv="pragma" content="no-cache"/>-->
+<!--	<meta http-equiv="cache-control" content="no-cache"/>-->
+<!--	<meta http-equiv="expires" content="0"/>-->
+	<title>橡木林官网</title>
+<!--	<link rel="icon" type="image/x-icon" href="../favicon.ico">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no">
+<!--	禁止将数字变为电话号码-->
+	<meta name="format-detection" content="telephone=no" />
+<!--	iphone设备中的safari私有meta标签	它表示：允许全屏模式浏览，隐藏浏览器导航栏-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--	iphone的私有标签	它指定的iphone中safari顶端的状态条的样式-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--	另外还有一个个性化的link标签，它支持用户将网页创建快捷方式到桌面时，其图标变为我们自己定义的图标。比如手机腾讯网上的标签：-->
+<!--	<link rel="apple-touch-icon-precomposed" href="http://3gimg.qq.com/wap30/info/info5/img/logo_icon.png">-->
+<!--	强制浏览器使用Webkit内核，国内很多的主流浏览器都是双核浏览器：-->
+	<meta name="renderer" content="webkit">
+	<style>
+		/** {*/
+		/*	box-sizing: border-box;*/
+		/*	margin: 0;*/
+		/*}*/
+
+		/*body {*/
+		/*	display: flex;*/
+		/*	min-height: 100vh;*/
+		/*	flex-direction: column;*/
+		/*	font-size: 16px;*/
+		/*}*/
+
+		/*.header,*/
+		/*.main,*/
+		/*.footer {*/
+		/*	display: flex;*/
+		/*	flex-direction: column;*/
+		/*	position: relative;*/
+
+		/*}*/
+
+		/*.header {*/
+		/*	!*background-color: #E8EAF6;*!*/
+		/*	background: pink;*/
+		/*	height: 1.4rem;*/
+		/*	flex-shrink: 0;*/
+		/*}*/
+
+		/*.header:before {*/
+		/*	content: 'header';*/
+		/*	position: absolute;*/
+		/*	background-color: #fff;*/
+		/*}*/
+
+		/*.main {*/
+		/*	flex: 1;*/
+		/*	background-color: #E3F2FD;*/
+		/*}*/
+
+		/*.main:before {*/
+		/*	content: 'main';*/
+		/*	position: absolute;*/
+		/*	background-color: #fff;*/
+		/*}*/
+
+		/*.footer {*/
+		/*	background-color: #E8EAF6;*/
+		/*	height: 1rem;*/
+		/*	flex-shrink: 0;*/
+		/*}*/
+
+		/*.footer:before {*/
+		/*	content: 'footer';*/
+		/*	position: absolute;*/
+		/*	background-color: #fff;*/
+		/*}*/
+
+		/*.container {*/
+		/*	background-color: #BBDEFB;*/
+		/*	flex: 1;*/
+		/*	position: relative;*/
+
+		/*}*/
+
+		/*.container:before {*/
+		/*	content: 'container width 100%';*/
+		/*	position: absolute;*/
+		/*	background-color: #fff;*/
+		/*}*/
+
+		/*.main .container {*/
+		/*	background-color: #C5CAE9;*/
+		/*}*/
+
+		/*.grid {*/
+		/*	display: flex;*/
+		/*	flex-wrap: wrap;*/
+		/*}*/
+
+		/*.item {*/
+		/*	font-size: .28rem;*/
+		/*	width: 50%;*/
+		/*	background-color: #EDE7F6;*/
+		/*	border: 5px solid #81C784*/
+		/*}*/
+
+		/*.item:nth-of-type(3n+1) {*/
+		/*	background-color: #E1F5FE;*/
+		/*	border: 5px solid #4DB6AC*/
+		/*}*/
+
+		/*.item:nth-of-type(3n+2) {*/
+		/*	background-color: #F9FBE7;*/
+		/*	border: 5px solid #AED581*/
+		/*}*/
+
+		/*.img {*/
+		/*	height: 2rem;*/
+		/*}*/
+
+		/*.desc {*/
+		/*	width: 1.6rem;*/
+		/*	font-size: .28rem;*/
+		/*	color: #FF9800;*/
+		/*	line-height: .40rem;*/
+		/*	border: 1px solid #FFCC80;*/
+		/*	margin: 5px 20px*/
+		/*}*/
+
+		/*@media (min-width:576px) {*/
+		/*	.container {*/
+		/*		width: 12rem;*/
+		/*		margin: 0 auto;*/
+		/*	}*/
+		/*	.container:before {*/
+		/*		content: 'container width 12rem';*/
+		/*		position: absolute;*/
+		/*		background-color: #fff;*/
+		/*	}*/
+
+		/*	.item {*/
+		/*		font-size: .32rem;*/
+		/*		width: 33.333%;*/
+		/*	}*/
+		/*}*/
+
+		/*@media (min-width:1024px) {*/
+		/*	.container {*/
+		/*		width: 18rem;*/
+		/*	}*/
+		/*	.container:before {*/
+		/*		content: 'container width 18rem';*/
+		/*		position: absolute;*/
+		/*		background-color: #fff;*/
+		/*	}*/
+		/*	.item {*/
+		/*		font-size: .36rem;*/
+		/*		width: 25%;*/
+		/*	}*/
+		/*}*/
+	</style>
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="../assets/css/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+	<link rel="stylesheet" type="text/css" href="../assets/css/grids-responsive-min.css">
+	<!--<![endif]-->
+
+	<!--<![endif]-->
+	<script>
+        // (function () {
+        //     var responsive = function () {
+        //         var clientWidth = document.documentElement.clientWidth;
+        //         if (clientWidth < 575) {
+        //             document.documentElement.style.fontSize = clientWidth / 750 * 100 + 'px';
+        //         } else if (clientWidth < 1024) {
+        //             document.documentElement.style.fontSize = clientWidth / 1536 * 100 + 'px';
+        //         } else {
+        //             document.documentElement.style.fontSize = '50px'
+        //         }
+        //     };
+        //     responsive();
+        //     window.onresize = function () {
+        //         responsive()
+        //     };
+        // }())
+		// ;
+		// (function(win) {
+		// 	var doc = win.document;
+		// 	var docEl = doc.documentElement;
+		// 	var tid;
+		// 	function refreshRem() {
+		// 			  var clientWidth = document.documentElement.clientWidth;
+		// 			  console.log(clientWidth)
+        //                 if (clientWidth < 575) {
+        //                     docEl.style.fontSize = clientWidth / 750 * 100 + 'px';
+        //                 } else if (clientWidth < 1024) {
+        //                     docEl.style.fontSize = clientWidth / 1536 * 100 + 'px';
+        //                 } else {
+        //                     docEl.style.fontSize = '50px'
+        //                 }
+		// 	 }
+		//
+        //          win.addEventListener('resize', function() {
+        //                  clearTimeout(tid);
+        //                  tid = setTimeout(refreshRem, 300);
+        //              }, false);
+        //          win.addEventListener('pageshow', function(e) {
+        //                  if (e.persisted) {
+        //                          clearTimeout(tid);
+        //                          tid = setTimeout(refreshRem, 300);
+		// 				 }
+        //              }, false);
+		//
+        //          refreshRem();
+		//
+        //      })(window);
+	</script>
+</head>
+
+
+<body>
+<!--<div class="header">-->
+<!--	<div class="container"></div>-->
+<!--</div>-->
+<!--<div class="main">-->
+<!--	<div class="container">-->
+
+<!--		<div class="grid">-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p1.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p5.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p2.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p3.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p4.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p5.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p3.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p2.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--			<div class="item">-->
+<!--				<div class="img" style="background: url('/assets/img/p3.jpg') center no-repeat;background-size: cover;"></div>-->
+<!--				<div class="desc">阿发啊滴</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div class="grid">-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--			<div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>-->
+<!--		</div>-->
+
+<!--	</div>-->
+<!--</div>-->
+<!--<div class="footer">-->
+<!--	<div class="container"></div>-->
+<!--</div>-->
+<div class="custom-menu-wrapper">
+	<div class="pure-menu custom-menu custom-menu-top">
+		<a href="#" class="pure-menu-heading custom-menu-brand">Brand</a>
+		<a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+	</div>
+	<div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+		<div class="custom-menu-screen"></div>
+		<ul class="pure-menu-list">
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">GitHub</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Apple</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Google</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Wang</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Yahoo</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
+		</ul>
+	</div>
+	<div>
+		<button class="button-success pure-button">Success Button</button>
+		<button class="button-error pure-button">Error Button</button>
+		<button class="button-warning pure-button">Warning Button</button>
+		<button class="button-secondary pure-button">Secondary Button</button>
+	</div>
+	<div class="pure-g">
+		<div class="pure-u-1 pure-u-md-1-3"> 1</div>
+		<div class="pure-u-1 pure-u-md-1-3"> 2 </div>
+		<div class="pure-u-1 pure-u-md-1-3"> 3 </div>
+	</div>
+</div>
+</body>
+
+<script>
+    (function (window, document) {
+        document.getElementById('toggle').addEventListener('click', function (e) {
+            document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+            document.getElementById('toggle').classList.toggle('x');
+        });
+    })(this, this.document);
+</script>
+
+</html>
