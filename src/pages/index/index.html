@@ -21,6 +21,19 @@
 <!--	<link rel="apple-touch-icon-precomposed" href="http://3gimg.qq.com/wap30/info/info5/img/logo_icon.png">-->
 <!--	强制浏览器使用Webkit内核，国内很多的主流浏览器都是双核浏览器：-->
 	<meta name="renderer" content="webkit">
+	<script type="text/javascript">
+        // function browserRedirect() {
+        //     var sUserAgent = navigator.userAgent.toLowerCase();
+        //     if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+        //         //跳转移动端页面
+        //         window.location.href="/page1.html";
+        //     } else {
+        //         //跳转pc端页面
+        //         // window.location.href="/";
+        //     }
+        // }
+        // browserRedirect();
+	</script>
 	<style>
 		/** {*/
 		/*	box-sizing: border-box;*/
@@ -163,14 +176,14 @@
 		/*	}*/
 		/*}*/
 	</style>
-	<!--[if lte IE 8]>
-	<link rel="stylesheet" type="text/css" href="../assets/css/grids-responsive-old-ie-min.css">
-	<![endif]-->
-	<!--[if gt IE 8]><!-->
-	<link rel="stylesheet" type="text/css" href="../assets/css/grids-responsive-min.css">
-	<!--<![endif]-->
+<!--	&lt;!&ndash;[if lte IE 8]>-->
+<!--	<link rel="stylesheet" type="text/css" href="../assets/css/grids-responsive-old-ie-min.css">-->
+<!--	<![endif]&ndash;&gt;-->
+<!--	&lt;!&ndash;[if gt IE 8]>&lt;!&ndash;>-->
+<!--	<link rel="stylesheet" type="text/css" href="../assets/css/grids-responsive-min.css">-->
+<!--	&lt;!&ndash;<![endif]&ndash;&gt;-->
 
-	<!--<![endif]-->
+<!--	&lt;!&ndash;<![endif]&ndash;&gt;-->
 	<script>
         // (function () {
         //     var responsive = function () {
@@ -220,6 +233,9 @@
 		//
         //      })(window);
 	</script>
+	<!-- <script src="../assets/jquery/dist/jquery.min.js"></script> -->
+	<!-- <script src="../assets/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../assets/bootstrap-4.3.1/dist/css/bootstrap.min.css"> -->
 </head>
 
 
@@ -288,48 +304,20 @@
 <!--<div class="footer">-->
 <!--	<div class="container"></div>-->
 <!--</div>-->
-<div class="custom-menu-wrapper">
-	<div class="pure-menu custom-menu custom-menu-top">
-		<a href="#" class="pure-menu-heading custom-menu-brand">Brand</a>
-		<a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-	</div>
-	<div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
-		<div class="custom-menu-screen"></div>
-		<ul class="pure-menu-list">
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">GitHub</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Apple</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Google</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Wang</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Yahoo</a></li>
-			<li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
-		</ul>
-	</div>
-	<div>
-		<button class="button-success pure-button">Success Button</button>
-		<button class="button-error pure-button">Error Button</button>
-		<button class="button-warning pure-button">Warning Button</button>
-		<button class="button-secondary pure-button">Secondary Button</button>
-	</div>
-	<div class="pure-g">
-		<div class="pure-u-1 pure-u-md-1-3"> 1</div>
-		<div class="pure-u-1 pure-u-md-1-3"> 2 </div>
-		<div class="pure-u-1 pure-u-md-1-3"> 3 </div>
-	</div>
-</div>
+
+
+<div>123</div>
+
+
 </body>
 
 <script>
-    (function (window, document) {
-        document.getElementById('toggle').addEventListener('click', function (e) {
-            document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
-            document.getElementById('toggle').classList.toggle('x');
-        });
-    })(this, this.document);
+    // (function (window, document) {
+    //     document.getElementById('toggle').addEventListener('click', function (e) {
+    //         document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+    //         document.getElementById('toggle').classList.toggle('x');
+    //     });
+    // })(this, this.document);
 </script>
 
 </html>
